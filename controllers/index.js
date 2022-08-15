@@ -23,19 +23,37 @@ function renderTableCarousel(arrProductCarousel, idbodyCarousel){
   var htmlCarousel = "";
   for (var index = 0; index < arrProductCarousel.length; index++) {
     var product = arrProductCarousel[index];
-    htmlCarousel +=
-    `
-    <div class="carousel-item active">
-    <div class="carousel-slide">
-      <div class="carousel-img"><img src="${product.image}" alt=""></div>
-      <div class="carousel-name">
-        <h2>${product.name}</h2>
-        <div class="desc">${product.description}</div>
-        <button class="btn-button"><a href="./detail.html?productid=${product.id}">Buy Now</a></button>
+    if(product === arrProductCarousel[0]){
+      htmlCarousel +=
+      `
+      <div class="carousel-item active">
+      <div class="carousel-slide">
+        <div class="carousel-img"><img src="${product.image}" alt=""></div>
+        <div class="carousel-name">
+          <h2>${product.name}</h2>
+          <div class="desc">${product.description}</div>
+          <button class="btn-button"><a href="./detail.html?productid=${product.id}">Buy Now</a></button>
+        </div>
       </div>
     </div>
-  </div>
-    `
+      `
+    } else{
+      htmlCarousel +=
+      `
+      <div class="carousel-item">
+      <div class="carousel-slide">
+        <div class="carousel-img"><img src="${product.image}" alt=""></div>
+        <div class="carousel-name">
+          <h2>${product.name}</h2>
+          <div class="desc">${product.description}</div>
+          <button class="btn-button"><a href="./detail.html?productid=${product.id}">Buy Now</a></button>
+        </div>
+      </div>
+    </div>
+      `
+
+    }
+
   }
   document.getElementById(idbodyCarousel).innerHTML = htmlCarousel;
 }
