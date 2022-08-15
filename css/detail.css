@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.detail .container .detail-product {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.detail .container .detail-product .detail-l {
+  width: 30%;
+}
+.detail .container .detail-product .detail-l img {
+  padding: 50px 50px;
+  background: #F8F8F8;
+  width: 100%;
+}
+.detail .container .detail-product .detail-r {
+  width: 70%;
+  padding: 20px;
+}
+.detail .container .detail-product .detail-r .detail-r-title .name h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.detail .container .detail-product .detail-r .detail-r-title .description {
+  width: 550px;
+}
+.detail .container .detail-product .detail-r .detail-r-title .description p {
+  font-size: 16px;
+}
+.detail .container .detail-product .detail-r .detail-r-title .size .btn-size {
+  padding: 10px 15px;
+  background: #CCCCCC;
+  font-size: 18px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.detail .container .detail-product .detail-r .detail-r-title .price {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+.detail .container .detail-product .detail-r .detail-r-title .cacl {
+  display: flex;
+  text-align: center;
+  justify-content: start;
+}
+.detail .container .detail-product .detail-r .detail-r-title .cacl .caclItem {
+  width: 60px;
+  height: 60px;
+  align-items: center;
+}
+.detail .container .detail-product .detail-r .detail-r-title .cacl .caclItem p {
+  padding: 20px;
+}
+.detail .container .detail-product .detail-r .detail-r-title .cacl .caclItem .btn-cacl {
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  padding: 10px 25px;
+  border: none;
+  border-radius: none;
+  color: white;
+}
+.detail .container .detail-product .detail-r .detail-r-title .cacl .caclItem .btn-cacl:hover {
+  background: #F8B653;
+  color: white;
+}
+.detail .container .detail-product .detail-r .detail-r-title button {
+  margin-top: 10px;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  padding: 15px 55px;
+  border: none;
+  border-radius: none;
+  color: white;
+}
+.detail .container .detail-product .detail-r .detail-r-title button:hover {
+  background: #F8B653;
+  color: white;
+}

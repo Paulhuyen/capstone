@@ -1,0 +1,74 @@
+@import '../Base/base.scss';
+@import '../Themes/variable.scss';
+.detail{
+    .container{
+        .detail-product{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            .detail-l{
+                width: 30%;
+                img{
+                    padding: 50px 50px;
+                    background: $c3-bg;
+                    width: 100%;
+                }
+            }            
+            .detail-r{
+                width: 70%;
+                padding: 20px;
+                // line-height: 36px;
+                .detail-r-title{
+                    .name{
+                        h3{
+                            font-size: 30px;
+                            font-weight: 600;
+                        }
+                    }
+                    .description{
+                        width: 550px;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    .size{
+                        .btn-size{
+                            padding: 10px 15px;
+                            background: #CCCCCC;
+                            font-size: 18px;
+                            margin-right: 20px;
+                            font-weight: bold;
+                        }
+                    }
+                    .price{
+                        color: red;
+                        font-weight: bold;
+                        font-size: 30px;
+                    }
+                    .cacl{
+                        display: flex;
+                        text-align: center;
+                        justify-content: start;
+                        .caclItem{
+                            width: 60px;
+                            height: 60px;
+                            align-items: center;
+                            p{
+                                padding: 20px;
+                            }
+                            .btn-cacl{
+                                @include button($c2-bg-grd, 10px 25px, none,none,$c1-cl-white,$c2-bg-gold,$c1-cl-white)
+                            }
+                        }
+
+                    }
+                    button{
+                        margin-top: 10px;
+                        @include button($c1-bg-grd, 15px 55px, none,none,$c1-cl-white,$c2-bg-gold,$c1-cl-white)
+                    }
+
+                }
+            }
+        }
+    }
+}

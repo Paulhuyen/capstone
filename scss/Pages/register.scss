@@ -1,0 +1,44 @@
+@import '../Base/base.scss';
+@import '../Themes/variable.scss';
+
+
+.register{
+    .container{
+        padding: 20px 150px;
+        .register-inner{
+            form{
+              .col{
+                .input-table{
+                    .btn-submit{
+                        @include button($c6-bg, 5px 50px, none, none, $c1-cl-white,$c4-bg,$c1-cl-white)
+                    }
+                    .input-gender{
+                        input{
+                            width: 40px !important;
+                            height: 30px !important;
+                        }
+                    }
+                }
+              }
+            }
+        }
+    }
+}
+.spanAfter{
+    font-size: 20px;
+    color: red;
+}
+.spanTb{
+    color: red;
+    // display: block;
+}
+.spangender{
+    color: red;
+    // display: block;
+}
+.input-group{
+    border-bottom: 3px solid $c6-bg;
+}
+.input-table{
+    height: 70px;
+}

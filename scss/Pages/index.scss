@@ -1,0 +1,223 @@
+@import '../Base/base.scss';
+@import '../Themes/variable.scss';
+
+
+// ----------------- Header -----------------
+.header {
+    padding: 15px;
+    background-color: $c1-bg-dark;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .navbar {
+            a {
+                text-decoration: none;
+                margin-left: 20px;
+                color: $c1-cl-white;
+                font-size: 20px;
+            }
+        }
+
+        .navbar_right {
+            a {
+                text-decoration: none;
+                margin-left: 20px;
+                font-size: 20px;
+                color: $c1-cl-white;
+            }
+        }
+    }
+}
+
+.carousel-section {
+    width: 100%;
+    padding: 30px 0;
+    height: 500px;
+    margin: auto;
+
+    .container {
+        .carousel {
+            background-image: url(../../img/image\ 6.png);
+            background-size: cover;
+
+            .carousel-inner {
+                .carousel-item {
+                    .carousel-slide {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 15px;
+
+                        .carousel-name {
+                            h2 {
+                                @include text(40px, 300, $c2-cl-black);
+                            }
+
+                            .desc {
+                                @include text(18px, 300, $c2-cl-black);
+                                width: 250px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+
+                            .btn-button {
+                                margin-top: 20px;
+                                font-size: 16px;
+                                @include button($c2-bg-gold, 10px 30px, none, none, $c1-cl-white, $c4-bg, $c1-cl-white);
+
+                                a {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .carousel-control-prev {
+                .carousel-control-prev-icon {
+                    width: 60px;
+                    height: 45px;
+                    background-image: url(../../img/Polygon\ 2.png);
+                }
+            }
+
+            .carousel-control-next {
+                .carousel-control-next-icon {
+                    width: 60px;
+                    height: 45px;
+                    background-image: url(../../img/Polygon\ 1.png);
+
+                }
+            }
+
+        }
+    }
+
+}
+
+
+.products {
+    margin-top: 20px;
+    padding: 20px 0;
+
+    .container {
+        h2 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .col-pr {
+                padding: 10px 30px;
+                width: 33%;
+
+                .card-item {
+
+                    background-color: $c3-bg;
+
+                    .card-img {
+                        padding: 15px 35px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .card-body {
+                        padding: 0 23px;
+
+                        .desc {
+                            color: $c3-cl-white-op;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            height: 80%;
+                        }
+                    }
+
+                    .card-footer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        button {
+                            width: 50%;
+                            @include button($c4-bg, 17px 26px, none, none, $c2-cl-black, $c2-bg-gold, $c2-cl-black)
+                        }
+
+                        .price {
+                            background: $c5-bg;
+                            padding: 17px 26px;
+                            width: 50%;
+                            height: 100%;
+                            position: relative;
+                            top: 8px;
+                            text-align: center;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+
+        .footer-inner {
+            .row {
+                padding: 20px 80px;
+                .col {
+                    // line-height: 15px;
+                    position: relative;
+
+                    h3 {
+                        @include text(30px, 600, $c2-cl-black);
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 3px;
+                    }
+                    span{
+                        color: red;
+                    }
+                }
+
+            }
+            .col:first-child::before{
+                content: '';
+                width: 2px;
+                height: 100px;
+                background-color: rgb(0, 89, 255);
+                left: 0;
+                top: 25px;
+                position: absolute;
+                display: none;
+            }
+            .col::before{
+                content: '';
+                width: 2px;
+                height: 100px;
+                background-color: $c5-bg;
+                left: 0;
+                top: 25px;
+                position: absolute;
+            }
+        }
+        .footer-inner:last-child{
+                background-color: $c3-bg;
+        }
+
+}
+
+// -----------------------  DETAIL =----------------------------

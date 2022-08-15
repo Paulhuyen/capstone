@@ -1,0 +1,37 @@
+// COLOR
+
+$c1-bg-dark : #000000;
+$c2-bg-gold: #F8B653;
+$c3-bg:#F8F8F8;
+$c4-bg:#E1B067;
+$c5-bg:#DEDDDC;
+$c6-bg: #AE18E2;
+
+$c1-cl-white: white;
+$c2-cl-black: #000000;
+$c3-cl-white-op: #CBC9C9;
+$c4-cl : #1ED90E;
+
+$c6-cl: #AE18E2;
+
+
+$c1-bg-grd:linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+$c2-bg-grd:linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+// BUTTON
+
+@mixin button ($bg,$pd,$bd,$br,$cl,$bg-hover,$cl-hover){
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    color: $cl;
+    &:hover{
+        background: $bg-hover;
+        color: $cl-hover;
+    }
+}
+@mixin text($fz, $fw, $cl) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $cl;
+}
